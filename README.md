@@ -7,4 +7,4 @@ Status: In progress
 ## Tecnologies used:
 - Github
 - Visual Studio Code
-- HTML5 and CSS3: for page structure
+- HTML5 and CSS3: for page structure and styles

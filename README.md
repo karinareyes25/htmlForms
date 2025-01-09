@@ -1,4 +1,4 @@
-# Exercice HTML Forms
+# Exercise HTML Forms
 Status: In progress
 
 ## Objective:

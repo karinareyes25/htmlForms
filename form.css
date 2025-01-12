@@ -1,47 +1,63 @@
-body{
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
-    margin: 0;
-    padding: 20px;
+    height: 100vh;
+    display: block;
+    background-color: #00ca75;
+}
+header {
     text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: rgba(8, 176, 75, 0.889);
+    font-weight: 300;
+    font-size: small;
 }
 
-
-
-form{
-    width: 60vw;
-    height: 60vh;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding-bottom: 2em;
+.form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 35px;
+    padding: 15px;
 }
+
 fieldset{
-    background-color: #fff;
-    border: 1px solid;
-}
-
-label{
-    display: inline;
-    margin: 0.5rem 0;
-}
-
-textarea, select{
-    width: 70%;
-    margin: 10px 0;
-    min-height: 2em;
-    background-color: #fff;
-    border: 1px solid #ccc;
-}
-
-.submit{
-    background-color: rgba(8, 176, 75, 0.889);
-    width: 72%;
-    margin: 3em;
-    padding: 0.1em;
-    font-weight: 500;
     border: none;
-    cursor:pointer;
+}
+
+p{
+    text-align: left;
+}
+
+.data,
+.recommendation,
+.languages-check,
+.comments{
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.data input{
+    height: 35px;
+}
+.data{
+    margin-top: 10px;
+    gap:20px
+}
+
+#occupation{
+    height: 40px;
+    background-color: #fff;
+    border: solid 0,5pc;
+}
+
+#submit{
+    background-color:#00ca75;
+    border: solid 1px gray;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 35px;
+    cursor: pointer;
 }
 

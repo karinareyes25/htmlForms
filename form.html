@@ -7,82 +7,64 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
+    <header>
+        <h1>GeeksforGeeks Survey Form</h1>
+    </header>
 
-    <h1>GeeksforGeeks Survey Form</h1>
+<form class="form">
+            <div class="data">
+                <label for="name">Name</label>
+                <input class="name" type="text" id="name" name="name" placeholder="Enter your name">
+    
+                <label for="email">Email</label>
+                <input class="name" type="text" id="email" name="email" placeholder="Enter you email">
 
-<form>
-    <fieldset> 
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+                <label for="age">Age</label>
+                <input class="name" type="text" id="age" name="age" placeholder="Enter your age">
 
-            <label for="email">Email</label><br>
-            <input type="text" id="email" name="email" placeholder="Enter you email"><br>
+                <p>Which option best describe you?</p>
+    
+                <select name="occupation" id="occupation">
+                    <option value="">Student</option>
+                    <option value="">Worker</option>
+                    <option value="">Coder</option>
+                </select>
+            </div>
+        </fieldset>
 
-            <label for="age">Age</label><br>
-            <input type="text" id="age" name="age" placeholder="Enter your age"><br>
+        <fieldset>
+            <p>Would you recommend GeeksforGeeks to a friend?</p>
+                <div class="recommendation">
+                    <label for="yes"><input type="radio" id="yes" name="recommendation" value="Yes">Yes</label>
+                    <label for="yes"><input type="radio" id="No" name="recommendation" value="No"> No</label>
+                    <label for="maybe"><input type="radio" id="maybe" name="recommendation" value="Maybe">Maybe</label> 
+                </div>
+        </fieldset>
+   
+    <fieldset>
+        <p>Languages and Frameworks known (Check all  that apply) </p>
+        <div class="languages-check">
+            <label for="C"><input type="checkbox" id="C" name="C" value="C">C</label>
+            <label for="C++"><input type="checkbox" id="C++" name="C++" value="C++">C++</label>
+            <label for="C#"><input type="checkbox" id="C#" name="C#" value="C#">C#</label>
+            <label for="Java"><input type="checkbox" id="Java" name="Java" value="Java">Java</label>
+            <label for="Python"><input type="checkbox" id="Python" name="Python" value="Python">Python</label>
+            <label for="JavaScript"><input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">JavaScript</label>
+            <label for="React"><input type="checkbox" id="React" name="React" value="React">React</label>
+            <label for="Angular"><input type="checkbox" id="Angular" name="Angular" value="Angular">Angular</label>
+            <label for="Django"><input type="checkbox" id="Django" name="Django" value="Django">Django</label>
+            <label for="Spring"><input type="checkbox" id="Spring" name="Spring" value="Spring">Spring</label>
+        </div>
+    </fieldset>
+    
+    <fieldset class="comments">
+        <p>Any comments or suggestion</p>
 
-            <label for="option">Wich option best describe you?</label><br>
-
-            <select name="referrer" id="referrer">
-                <option value="">Student</option>
-                <option value="">Worker</option>
-                <option value="">Coder</option>
-            </select>
-
-        <p>Would you recommend GeeksforGeeks to a friend?</p>
-            <label for="yes">Yes</label><br>
-            <input type="radio" id="yes" name="yes" value="Yes">
-
-            <label for="yes">No</label><br>
-            <input type="radio" id="No" name="No" value="No">
-
-            <label for="maybe">Maybe</label><br>
-            <input type="radio" id="maybe" name="maybe" value="Maybe">
-            
-
-        <p>Languages and Framaworks known (Check all  that aply) </p>
-            <label for="C">C</label><br>
-            <input type="checkbox" id="C" name="C" value="C">
-
-            <label for="C++">C++</label><br>
-            <input type="checkbox" id="C++" name="C++" value="C++">
-
-            <label for="C#">C#</label><br>
-            <input type="checkbox" id="C#" name="C#" value="C#">
-
-            <label for="Java">Java</label><br>
-            <input type="checkbox" id="Java" name="Java" value="Java">
-
-            <label for="Python">Python</label><br>
-            <input type="checkbox" id="Phyton" name="Python" value="Python">
-
-            <label for="JavaScript">JavaScript</label><br>
-            <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">
-
-            <label for="React">React</label><br>
-            <input type="checkbox" id="React" name="React" value="React">
-
-            <label for="Angular">Angular</label><br>
-            <input type="checkbox" id="Angular" name="Angular" value="Angular">
-
-            <label for="Django">Django</label><br>
-            <input type="checkbox" id="Django" name="Django" value="Django">
-
-            <label for="Spring">Spring</label><br>
-            <input type="checkbox" id="Spring" name="Spring" value="Spring">
-
-        <p>Any comments os sugestion</p>
-
-            <label for="comments"></label><br>
-            <textarea name="" id=""></textarea><br>
-
-            <input class="submit" type="submit" value="Submit">
-
-        </fieldset>    
+        <label for="comments"></label>
+        <textarea name="comments" id="comments"></textarea>
+        <input type="submit" value="Submit" id="submit">
+    </fieldset>
     </form>
-</body>
-</html>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
